@@ -1,0 +1,814 @@
+@font-face {
+    font-family: "iconFont";
+    src: url("foundation-icons.ttf");
+    
+    }
+    
+    @font-face {
+    font-family: "gothamA";
+    src: url("GothamRoundedBook_21018.ttf");
+    
+    }
+    
+    /*==================*/
+    
+    
+    *{
+        font-family: 'gothamA';
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    
+    .whites{
+    
+        color: white;
+    }
+    
+    .grays{
+    
+        color: grey;
+    }
+    
+    nav{
+    
+        float: right;
+        
+    
+    }
+    
+    .navbar{
+    
+    
+        height: 50px;
+        width: 99%;
+        background: #fff;
+        position: fixed;
+        transition: height 600ms 0s ease-in-out;
+        box-shadow: 0 0 2px rgba(0,65,94,0.2);
+        z-index: 30;
+        padding-right: 100px;
+        padding-left: 8/6;
+    }
+    
+    #logoBig{
+    
+        padding-left: 10px;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        height: 35px;
+        float: left;
+        z-index: 2;
+        position: absolute;
+        display: none;
+    }
+    
+    
+    #logoSmall{
+    
+        padding-left: 20px;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        height: 35px;
+        float: left;
+        z-index: 1;
+        position: absolute;
+    }
+    
+    ul{
+    
+        display: inline;
+        list-style-type: none;
+        padding-right: 50px;
+    
+        
+    }
+    
+    ul li{
+    
+        display: inline;
+        float: right;
+        font-weight: bolder;
+        line-height: 50px;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 30px;       
+    }
+    
+    ul li a{
+    
+        text-decoration: none;
+        color: #bfbfbf;
+    }
+    
+    #freetrial{
+    
+        color: #5cd482;
+    
+    }
+
+    #freetrial:hover{ 
+        color: #3caa5f;
+    }   
+
+    #signIn, #techdegree, #teams{
+    
+        display: none;
+        color: #7c8c8f;
+    }
+
+    #signIn:hover, #techdegree:hover, #teams:hover{
+        color: #272c31;
+    }
+    
+    .learntocode{
+    
+        padding: 48px 24px 24px 32px;
+        background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.0), rgba(35, 39, 61, 1.0) 90%), url(homepage.jpg);
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    
+    .headingcode h1{
+    
+        padding-top: 40px;
+         font-size: 2.4em;
+         font-weight: bolder;
+         padding-bottom: 15px;
+    }
+    
+    .headingcode h2{
+    
+        font-size: 1.75em;
+        font-weight: lighter;
+    
+    }
+    
+    .formDiv{
+    
+        margin: 25px 10px 0 10px;
+        padding: 0px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    #firstName:hover{
+        border-color: #999b9e;
+    }
+
+    #lastName:hover{
+        border-color: #999b9e;
+    }
+
+    #email:hover{
+        border-color: #999b9e;
+    }
+
+    #password:hover{
+        border-color: #999b9e;
+    }
+
+    .formDiv p{
+    
+        color: #576366;
+        padding: 20px 30px 20px 30px;
+        background-color: #edeff0;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 17px;
+    }
+    
+    .form{
+    
+        padding: 25px;
+    }
+    
+    .formInner{
+    
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .formInner2{
+        
+        padding: 6px;
+        width: 100%;
+    
+    }
+    
+    .formInner label{
+    
+        color: #40484a;
+        font-weight: 1000;
+        text-decoration-style: bold;
+    }
+    
+    .formInner input{
+    
+        padding-top: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        background-color: #f9fafa;
+        border: 2px solid #d4d9dd;
+        border-radius: 5px;
+        width: 80%;
+        font-size: 1em;
+        padding: 10px;
+        color: #40484a;
+    
+    }
+    
+    
+    
+    /*.formCheckbox input:before{
+    
+        margin-right: 20px;
+        width: 17px;
+        height: 17px;
+        border-radius: 5px;
+        border: 5px solid #8c9aa6;
+        cursor: pointer;
+    }*/
+    
+    .formCheckbox label{
+    
+        padding: 0 5px 20px 5px;
+        font-size: 0.9em;
+        color: #4b5658;
+        
+    
+    }
+    
+    .formCheckbox{
+    
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e3e3e3;
+    
+    }
+    
+    
+    .formClaim button{
+    
+        font-weight: 1000;
+        margin-top: 25px;
+        width: 100%;
+        font-size: 15px;
+        padding: 15px 10px 15px 10px;
+        background-color: #387bab;
+        border: 5px solid #387bab;
+        border-radius: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    
+        
+        
+    }
+
+    .formClaim button:hover{
+        font-weight: 1000;
+        margin-top: 25px;
+        width: 100%;
+        font-size: 15px;
+        padding: 15px 10px 15px 10px;
+        background-color: #121e61;
+        border: 5px solid #121e61;
+        border-radius: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .statsDiv{
+    
+        background-color: rgba(1,1,1,0);
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    
+    .stats{
+    
+        text-align: center;
+        font-weight: normal;
+        margin: 10px;
+        display: block;
+    }
+    
+    .largestats{
+    
+        font-size: 2.5em;
+    }
+    
+    .smallstats{
+    
+        font-size: 1.25em;
+    }
+    
+    .contents{
+    
+        background-color: #f9fafa;
+        background-image: url(middle.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        
+    }
+    
+    #girl{
+    
+        display: flex;
+        width: 80%;
+        text-align: left;
+        
+    }
+    
+    .flexibleVid{
+    
+        
+        padding-top: 80px;
+        border-radius: 5px;
+    }
+    
+    .flexibleVid video{
+    
+        width: 80%;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .flexibleText{
+    
+        
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .flexibleText h3{
+    
+        color: #272c31;
+        font-size: 2em;
+        font-style: bolder;
+    }
+    
+    .flexibleText p{
+    
+        margin-top: 15px;
+        color: #7b8b8e;
+        line-height: 1.6;
+        font-size: 1em;
+        padding-bottom: 90px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    
+    .supportiveText{
+    
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 90px;
+    }
+    
+    .supportiveText h3, .valuableText h3{
+    
+        color: #272c31;
+        font-size: 2em;
+        font-style: bolder;
+    }
+    
+    .supportiveText p, .valuableText p{
+    
+        margin-top: 15px;
+        color: #7b8b8e;
+        line-height: 1.6;
+        font-size: 1em;
+        padding-bottom: 30px;
+    }
+    
+    .supportivePic, .valuablePic{
+    
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+    
+    .supportivePic img{
+    
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+    
+    }
+    
+    .valuableText{
+    
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .valuablePic img{
+    
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    
+    .angledStripe{
+    
+        display: none;
+    }
+    
+    .partnershipsText{
+        
+        width: 90%;
+        margin-top: 70px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .partnershipsText h2{
+    
+            text-align: center;
+            font-size: 2.125em;
+            color: #384047;
+            font-weight: lighter;
+            padding-bottom: 50px;
+    }
+    
+    .Pics{
+    
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .Pics img{
+    
+        
+        max-width: 200px;
+        padding: 40px 0 40px 0;
+    
+    }
+    
+    .partnerships{
+    
+        margin-bottom: 100px;
+    }
+    
+    .challenge{
+    
+        background-image: radial-gradient(rgba(38,63,117, 0.8),rgba(38,63,117, 0.2)) ,url(https://static.teamtreehouse.com/assets/views/marketing/home/100-days-of-code-bg-6a72c1d4f2463649cb391a19550e64547823af2849917fa640d3e515900175d3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 80px 20px;
+        text-align: center;
+        
+    }
+    
+    .challenge h2{
+    
+        font-size: 30px;
+        font-weight: bolder;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    .challenge p{
+    
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    
+    .challenge a{
+    
+        text-decoration: none;
+        color: white;
+        margin-top: 20px;
+        display: inline-block;
+        font-weight: 700;
+    
+    
+    }
+    
+    .challenge .button{
+    
+        border-radius: 5px;
+        background-color: #5fcf80;
+        padding: 15px 30px;
+        text-overflow: ellipsis;
+    }
+    
+    .challenge .button:hover{
+        border-radius: 5px;
+        background-color: #45a562;
+        padding: 15px 30px;
+        text-overflow: ellipsis;
+    }
+
+    footer{
+    
+        padding-top: 50px;
+        padding-left: 15px;
+        background-color: #f9fafa;
+    }
+    
+    .footerlogo img{
+    
+        width: 150px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .footerlogo p{
+    
+        color: #576366;
+        font-size: 15px;
+    }
+    
+    .footerlogo{
+    
+        margin-bottom: 30px;
+    }
+    
+    .foot1 a, .foot2 a{
+    
+        color: #7b8b8e; 
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .foot2{
+    
+        margin-bottom: 30px;
+    
+    }
+    
+    .footIcons i{
+    
+        width: 25px;
+        margin-left: 2px;
+        margin-right: 2px;
+        background-color: #2d3339;
+        color: white;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*padding: 10px;*/
+        border-radius: 50%;
+    }
+    .footIcons i:hover{
+    
+        width: 25px;
+        margin-left: 2px;
+        margin-right: 2px;
+        background-color: #5fcf80;
+        color: white;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*padding: 10px;*/
+        border-radius: 50%;
+    }
+    
+    .footIcons{
+    
+        padding-bottom: 80px;
+    }
+    
+    
+    /*============MEDIA QUERIES==============*/
+    
+    @media only screen and (min-width: 690px) {
+    
+        .learntocode{
+    
+            background-attachment: fixed;
+        }
+    
+        #signIn{
+    
+            display: inline;
+        }
+    
+        .formInner{
+    
+            width: 45%;
+            padding-right: 20px;
+            
+        }
+    
+        .formInner2{
+    
+            width: 100%;
+            
+        }
+    
+        .statsDiv{
+    
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+            background-color: rgba(1,1,1,0);
+        }
+    
+        .stats{
+    
+            display: inline-block;
+    
+        
+        }
+    
+        .angledStripe{
+    
+            position: relative;
+            display: block;
+            height: 180px;
+            width: 100%;
+            transform: skewY(-3deg);
+            margin-top: -50px;
+            margin-bottom: -60px;
+        
+            background-color: white;
+        }
+    
+        .partnerships{
+    
+            text-align: center;
+        }
+    
+        .partnershipsPic{
+    
+            padding-left: 5%;
+            padding-right: 5%;
+            display: inline;
+        }
+        
+    
+    }
+    
+    
+    
+    
+    @media only screen and (min-width: 960px){
+    
+        .learntocode{
+    
+            background-attachment: fixed;
+        }
+    
+    
+        .navbar{
+    
+            height: 70px;
+    
+        }
+    
+        #logoSmall{
+    
+            display: none;
+    
+        }
+    
+        #logoBig{
+    
+            display: inline;
+            height: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+        }
+    
+        ul li{
+    
+        display: inline;
+        float: right;
+        font-weight: bolder;
+        line-height: 70px;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 30px;
+    
+        }
+    
+        #techdegree, #teams{
+    
+            display: inline;
+        }
+    
+    
+        .pc1{
+    
+            display: flex;
+        }
+    
+        .headingcode{
+    
+            float: left;
+            width: 60%;
+            padding-top: 200px;
+            
+        }
+    
+        .formDiv{
+    
+            margin-top: 100px;
+        }
+    
+        .flexible{
+    
+            
+            width: 90%;
+            display: flex;
+            border-bottom: 1px solid #e3e3e3;
+            margin: 0 auto;
+            padding-bottom: 30px;
+    
+    
+        }
+    
+        .flexibleVid{
+    
+            width: 180%;
+        }
+    
+        .flexibleText{
+    
+            padding-top: 80px;
+            padding-right: 60px;
+        }
+    
+        .flexibleText p{
+    
+        margin-top: 15px;
+        color: #7b8b8e;
+        line-height: 1.6;
+        font-size: 1em;
+        padding-bottom: 90px;
+        border-bottom: 0px;
+        }
+    
+        .supportValue{
+    
+            display: flex;
+    
+        }
+    
+        .supportive, .valuable{
+    
+            width: 50%;
+        }
+    
+        .valuableText{
+    
+            margin-top: 90px;
+        }
+    
+        .angledStripe{
+    
+            position: relative;
+            display: block;
+            height: 180px;
+            width: 100%;
+            transform: skewY(-3deg);
+            margin-top: -50px;
+            margin-bottom: -60px;
+        
+            background-color: white;
+        }
+    
+    
+        footer{
+    
+            display: flex;
+            padding-top: 80px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    
+        .foot1{
+    
+            margin-bottom: 30px;
+        }
+    
+        .footerlogo, .foot1, .foot2{
+    
+            width: 25%;
+        }
+    
+        
+    }
+    
+    
+    @media only screen and (min-width: 1150px){
+    
+        }
